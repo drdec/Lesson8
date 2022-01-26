@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.NetworkInformation;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Lesson8
 {
@@ -37,7 +31,7 @@ namespace Lesson8
 
                 string answerUser = Console.ReadLine();
 
-                if (answerUser.ToLower().Trim() == "yes")
+                if (answerUser != null && answerUser.ToLower().Trim() == "yes")
                 {
                     InputUserData();
 
